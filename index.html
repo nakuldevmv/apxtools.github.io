@@ -38,8 +38,8 @@
       --delay: 0.65s;
       --rotation-y: -24;
       --rotation-x: 28;
-      --color-one: #3a0ca3;
-      --color-two: #4361ee;
+      --color-one: #0ca39b;
+      --color-two: #43eec6;
       --color-three: #4cc9f0;
     }
 
@@ -54,6 +54,7 @@
     }
 
     @keyframes scale {
+
       0%,
       10% {
         transform: scaleX(1) scaleY(1);
@@ -71,10 +72,10 @@
       bottom: 0;
       aspect-ratio: 1;
       transform-origin: 50% 50%;
-      background: hsl(210 80% 50% / 0.2);
+      background: hsla(0, 0%, 0%, 0.2);
       transform: rotateX(90deg) translate3d(0, 0, calc((var(--size) * (var(--coefficient) * -0.5)) - 1px)) scale(0.96);
       animation: squish-squosh var(--timeline) var(--delay) infinite, fade var(--timeline) var(--delay) infinite;
-      background: black;
+      background: rgb(0, 0, 0);
     }
 
     .loader {
@@ -95,6 +96,7 @@
     }
 
     @keyframes squish-squosh {
+
       0%,
       50%,
       60% {
@@ -125,6 +127,7 @@
     }
 
     @keyframes fade {
+
       0%,
       10%,
       40%,
@@ -140,6 +143,7 @@
     }
 
     @keyframes spin {
+
       0%,
       10% {
         rotate: 0deg;
@@ -152,6 +156,7 @@
     }
 
     @keyframes jump {
+
       0%,
       10%,
       35%,
@@ -264,7 +269,7 @@
     }
   </style>
 
-  
+
 
 </head>
 
@@ -275,7 +280,7 @@
       <div class="spinner">
         <div class="scaler">
           <div class="loader">
- <div class="cuboid">
+            <div class="cuboid">
               <div class="cuboid__side"></div>
               <div class="cuboid__side"></div>
               <div class="cuboid__side"></div>
@@ -288,8 +293,8 @@
       </div>
     </div>
 
-    
 
-  </body>
+
+</body>
 
 </html>
